@@ -1,0 +1,82 @@
+:root{
+  --font_roboto_standar: 'Roboto', sans-serif;
+  --font_exo: 'Exo 2', sans-serif;
+
+  --color_yellow_generic: #e0d100e8;
+  --color-grey-general: #434242;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+body {
+  margin: 0px;
+  font-family: var(--font_roboto_standar);
+}
+/*modificaciones generales selectores base*/
+ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+a{
+  text-decoration: none;
+  color: #000000;
+}
+/*container*/
+.container-120 {
+  max-width: 120rem;
+  margin: 0 auto;
+}
+
+/*botones*/
+.btn-spacing{
+  margin-top: 2rem;
+}
+.center{
+  display: block;
+  display: flex;
+  justify-content: center;
+}
+.btn{
+  border-radius: 0.2rem;
+  padding: 1rem 2rem;
+  display: inline-block;
+  font-size: 2rem;
+  text-transform: capitalize;
+}
+/* primer boton*/
+.primary-general{
+  background-color: red;
+  transition: 0.3s ease-in-out;
+  color: #ffffff;
+  transform: translateY(0);
+}
+.primary-general:hover{
+  transform: translateY(1rem);
+  background-color: rgb(255, 77, 77);
+}
+/*second btons*/
+.seconds-btn__general{
+  font-size: 1.5rem;
+  padding: 0.5rem 1rem;
+  color: white;
+  background-color: var(--color_yellow_generic);
+  margin-right: 1rem;
+}
+.seconds-btn__general:last-of-type{
+  margin-right: 0rem;
+}
